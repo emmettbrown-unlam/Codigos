@@ -1,15 +1,15 @@
 
 int operaciones (int n)
 {
-int pasos = 0;
-  while(n > 0)
-  {
-    while(n != 1 && n % 2 == 0)
-    {
-      n /= 2;
-      pasos++;
-    }
-    n--;
+int pasos = 1, cont = 1;
+  while(n > cont){
+    n *= 2;
+    pasos++
+  }
+  pasos--;
+  n/= 2;
+  while(n != cont){
+    n++;
     pasos++;
   }
   return pasos;
