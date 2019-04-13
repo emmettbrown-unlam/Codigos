@@ -1,0 +1,16 @@
+
+int operaciones (int n)
+{
+int pasos = 0;
+  while(n > 0)
+  {
+    while(n != 1 && n % 2 == 0)
+    {
+      n /= 2;
+      pasos++;
+    }
+    n--;
+    pasos++;
+  }
+  return pasos;
+}
